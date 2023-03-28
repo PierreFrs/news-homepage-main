@@ -1,0 +1,25 @@
+@font-face {
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf); format("ttf");
+    font-family: "Inter";
+}
+
+// Variables
+    //Colors
+        //Primary
+$Soft-orange: hsl(35, 77%, 62%);
+$Soft-red: hsl(5, 85%, 63%);
+        //Secondary
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+    // Font
+        // Font size
+$Paragraph-Font-Size: 15px;
+        // Font weight
+$Regular: 400;
+$Bold: 700;
+$Very-Bold: 800;
+
+// Mixins
+@
