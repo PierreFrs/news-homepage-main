@@ -38,17 +38,71 @@ $Very-Bold: "wght" 800;
 }
 
 
-
-// Global
-
-    // Reset
+// Reset
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+// Global
+
 html {
     font-family: Inter, sans-serif;
     font-size: $Paragraph-Font-Size;
+}
+
+body {
+    width: 100vw;
+}
+
+// header
+
+.header {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        transition: 0.5s;
+
+        .navbar__overlay {
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: $Very-dark-blue;
+            opacity: 0.7;
+        }
+
+        .navbar__icon-menu-close {
+            position: relative;
+            top: 2rem;
+            right: 1rem;
+            z-index: 2;
+        }
+        
+        .navbar__list {
+            @include flex__column;
+            width: 66%;
+            height: 100%;
+            background-color: $Off-white;
+            z-index: 3;
+
+            .navbar__list__link {
+                
+            }
+        }
+
+    }
 }

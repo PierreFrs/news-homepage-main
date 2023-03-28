@@ -10,4 +10,43 @@ html {
   font-family: Inter, sans-serif;
   font-size: 15px; }
 
+body {
+  width: 100vw; }
+
+.header {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.5s; }
+    .header .navbar .navbar__overlay {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: #00001a;
+      opacity: 0.7; }
+    .header .navbar .navbar__icon-menu-close {
+      position: relative;
+      top: 2rem;
+      right: 1rem;
+      z-index: 2; }
+    .header .navbar .navbar__list {
+      display: flex;
+      flex-direction: column;
+      width: 66%;
+      height: 100%;
+      background-color: #fffdfa;
+      z-index: 3; }
+
 /*# sourceMappingURL=style.css.map */
