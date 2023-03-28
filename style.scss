@@ -1,6 +1,6 @@
 @font-face {
-    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf); format("ttf");
-    font-family: "Inter";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-family: Inter;
 }
 
 // Variables
@@ -17,9 +17,38 @@ $Very-dark-blue: hsl(240, 100%, 5%);
         // Font size
 $Paragraph-Font-Size: 15px;
         // Font weight
-$Regular: 400;
-$Bold: 700;
-$Very-Bold: 800;
+$Regular: "wght" 400;
+$Bold: "wght" 700;
+$Very-Bold: "wght" 800;
 
 // Mixins
-@
+@mixin paragraph {
+    line-height: 26px;
+    color: $Grayish-blue;
+}
+
+@mixin sub__heading {
+    font-size: 1.3rem;
+    font-variation-settings: $Very-Bold;
+}
+
+@mixin flex__column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+// Global
+
+    // Reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-size: $Paragraph-Font-Size;
+}
